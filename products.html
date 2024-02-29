@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+<!-- /////navigation bar -->
+<nav>
+  <!-- nav logo -->
+  <div class="logo">
+    <a href="#"><img src="assets/logo.png.jpeg" alt="Logo"></a>
+  </div>
+  <!-- nav logo ends -->
+  <div class="navel">
+<ul>
+  <li><a href="index.html" class="active">Home</a></li>
+  <li><a href="products.html">Collection</a></li>
+  <li><a href="about.html">about</a></li>
+  <li><a href="#simu">Contact us</a></li>
+</ul>
+</div>
+<!-- ///////side two -->
+<div class="search-container">
+  <input type="text" placeholder="Search...">
+  <button type="submit">Search</button>
+</div>
+ 
+
+<!-- login home -->
+<i class="fas fa-user-plus" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"></i>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="#" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="assets/login.jpeg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button  type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+   <!-- login home -->
+
+   <!-- cart -->
+ <div class="cont">
+  <div class="icon">
+    <i class="fas fa-shopping-cart"></i>
+    <div class="popup-card" id="cart">
+      
+        <h2>Cart</h2>
+        <ul id="cart-items">
+          <!-- //// -->
+        </ul>
+        <p>Total: Ksh <span id="cart-total">0.00</span></p>
+      
+    </div>
+  </div>
+</div>
+ <!-- cart -->
+</nav>
+<!-- //////nav bar ends -->
+<h3 style="margin-left: 20px;">Featured:</h3>
+
+<div class="page">
+  
+  <div class="im1">
+     <img src="assets/download.jpeg" alt="">
+  </div>
+  <div class="im1">
+    <img src="assets/jordan.jpeg" alt="">
+    
+  </div>
+  <div class="im1">
+    <img src="assets/adidas.jpeg" alt="">
+  </div>
+  <div class="im1">
+    <img src="assets/birken.jpeg" alt="">
+  </div>
+</div>
+
+
+<div class="category">
+  <h2>Catalogue:</h2>
+  <p class="p">We have an exclusive selection ranging 
+    from the most iconic classic models to limited edition models.
+  </p>
+</div>
+
+
+<!-- //////main body -->
+<div class="outer">
+  <!-- //// -->
+  <section class="bad">
+
+    <label for="touch"><span>Categories</span></label>               
+    <input type="checkbox" id="touch"> 
+  
+    <ul class="slide">
+      <li><a href="#">Men</a></li> 
+      <li><a href="#">Women</a></li>
+      <li><a href="#">Kids</a></li>
+     
+    </ul>
+  
+  </section> 
+  <!-- //// -->
+<div class="inner">
+  <!-- ////////// -->
+<div class="main">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="assets/NIKE Air Force 1 x A MaManiere 3M Hand Wash Cold.jpeg" alt="Avatar">
+    </div>
+    <div class="flip-card-back">
+      <h1>Nike</h1>
+      <p>Air Force 1 Low Retro QS "Friday"</p>
+      <h3>ksh 6500</h3>
+      <table class="size-table">
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Inches</th>
+            <th>Centimeters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5</td>
+            <td>8.5"</td>
+            <td>21.6cm</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>9.25"</td>
+            <td>23.5cm</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>9.625"</td>
+            <td>24.4cm</td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="addToCart()" class="but">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="assets/Nike Air Vapormax Plus.jpeg" alt="Avatar">
+    </div>
+    <div class="flip-card-back">
+      <h1>Nike</h1>
+      <p>Air Force 1 Low Retro QS "Friday"</p>
+      <h3>ksh 6500</h3>
+      <table class="size-table">
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Inches</th>
+            <th>Centimeters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5</td>
+            <td>8.5"</td>
+            <td>21.6cm</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>9.25"</td>
+            <td>23.5cm</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>9.625"</td>
+            <td>24.4cm</td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="addToCart()" class="but">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="assets/Nike Air Force 1 Low “Christmas” CQ5059 118.jpeg" alt="Avatar">
+    </div>
+    <div class="flip-card-back">
+      <h1>Nike</h1>
+      <p>Air Force 1 Low Retro QS "Friday"</p>
+      <h3>ksh 6500</h3>
+      <table class="size-table">
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Inches</th>
+            <th>Centimeters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5</td>
+            <td>8.5"</td>
+            <td>21.6cm</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>9.25"</td>
+            <td>23.5cm</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>9.625"</td>
+            <td>24.4cm</td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="addToCart()" class="but">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="assets/Nike Terminator.jpeg" alt="Avatar">
+    </div>
+    <div class="flip-card-back">
+      <h1>Nike</h1>
+      <p>Air Force 1 Low Retro QS "Friday"</p>
+      <h3>ksh 6500</h3>
+      <table class="size-table">
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Inches</th>
+            <th>Centimeters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5</td>
+            <td>8.5"</td>
+            <td>21.6cm</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>9.25"</td>
+            <td>23.5cm</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>9.625"</td>
+            <td>24.4cm</td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="addToCart()" class="but">Add to Cart</button>
+    </div>
+  </div>
+</div>
+</div>
+<!-- //////////// -->
+
+<!-- //////// -->
+<div class="main">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="assets/by dr_ woo.jpeg" alt="Avatar">
+      </div>
+      <div class="flip-card-back">
+        <h1>Nike</h1>
+      <p>Air Force 1 Low Retro QS "Friday"</p>
+      <h3>ksh 6500</h3>
+      <table class="size-table">
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Inches</th>
+            <th>Centimeters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5</td>
+            <td>8.5"</td>
+            <td>21.6cm</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>9.25"</td>
+            <td>23.5cm</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>9.625"</td>
+            <td>24.4cm</td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="addToCart()" class="but">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="assets/New Balance 9060.jpeg" alt="Avatar">
+      </div>
+      <div class="flip-card-back">
+        <h1>Nike</h1>
+      <p>Air Force 1 Low Retro QS "Friday"</p>
+      <h3>ksh 6500</h3>
+      <table class="size-table">
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Inches</th>
+            <th>Centimeters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5</td>
+            <td>8.5"</td>
+            <td>21.6cm</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>9.25"</td>
+            <td>23.5cm</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>9.625"</td>
+            <td>24.4cm</td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="addToCart()" class="but">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="assets/Raheem Sterling Debuts BAPE x Clarks Wallabees & Desert Boots.jpeg" alt="Avatar">
+      </div>
+      <div class="flip-card-back">
+        <h1>Nike</h1>
+      <p>Air Force 1 Low Retro QS "Friday"</p>
+      <h3>ksh 6500</h3>
+      <table class="size-table">
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Inches</th>
+            <th>Centimeters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5</td>
+            <td>8.5"</td>
+            <td>21.6cm</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>9.25"</td>
+            <td>23.5cm</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>9.625"</td>
+            <td>24.4cm</td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="addToCart()" class="but">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="assets/Bowties & Sweet Dreams.jpeg" alt="Avatar">
+      </div>
+      <div class="flip-card-back">
+        <h1 id="nike">Nike</h1>
+      <p>Air Force 1 Low Retro QS "Friday"</p>
+      <h3>ksh 6500</h3>
+      <table class="size-table">
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Inches</th>
+            <th>Centimeters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5</td>
+            <td>8.5"</td>
+            <td>21.6cm</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>9.25"</td>
+            <td>23.5cm</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>9.625"</td>
+            <td>24.4cm</td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="addToCart()" class="but">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  </div>
+<!-- //////// -->
+
+
+<!-- ///////// -->
+<div class="main">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="assets/Nike SB Dunk High _Tauntaun_.jpeg" alt="Avatar">
+      </div>
+      <div class="flip-card-back">
+        <h1>Nike</h1>
+      <p id="x">Air Force 1 Low Retro QS "Friday"</p>
+      <h3 id="y">ksh 6500</h3>
+      <table class="size-table">
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Inches</th>
+            <th>Centimeters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5</td>
+            <td>8.5"</td>
+            <td>21.6cm</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>9.25"</td>
+            <td>23.5cm</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>9.625"</td>
+            <td>24.4cm</td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="addToCart()" class="but">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="assets/adidas.jpeg" alt="Avatar">
+      </div>
+      <div class="flip-card-back">
+        <h1>Nike</h1>
+      <p id="x">Air Force 1 Low Retro QS "Friday"</p>
+      <h3 id="y">ksh 6500</h3>
+      <table class="size-table">
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Inches</th>
+            <th>Centimeters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5</td>
+            <td>8.5"</td>
+            <td>21.6cm</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>9.25"</td>
+            <td>23.5cm</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>9.625"</td>
+            <td>24.4cm</td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="addToCart()" class="but">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="assets/Nike Terminator.jpeg" alt="Avatar">
+      </div>
+      <div class="flip-card-back">
+        <h1>Nike</h1>
+      <p id="x">Air Force 1 Low Retro QS "Friday"</p>
+      <h3 id="y">ksh 6500</h3>
+      <table class="size-table">
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Inches</th>
+            <th>Centimeters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5</td>
+            <td>8.5"</td>
+            <td>21.6cm</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>9.25"</td>
+            <td>23.5cm</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>9.625"</td>
+            <td>24.4cm</td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="addToCart()" class="but">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="assets/Nike Air Force 1 Low “Christmas” CQ5059 118.jpeg" alt="Avatar">
+      </div>
+      <div class="flip-card-back">
+        <h1>Adidas</h1>
+      <p id="x">Adidas originals Centennial 85</p>
+      <h3 id="y">Price:ksh 6500</h3>
+      <table class="size-table">
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Inches</th>
+            <th>Centimeters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5</td>
+            <td>8.5"</td>
+            <td>21.6cm</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>9.25"</td>
+            <td>23.5cm</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>9.625"</td>
+            <td>24.4cm</td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="addToCart()" class="but">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  </div>
+<!-- //////// -->
+
+</div>
+</div>
+<!-- //////main body -->
+
+
+
+<!-- //////////////// -->
+<!-- //////////////// -->
+
+
+<!-- //////////////// -->
+<!-- ////////////////// -->
+
+
+<!-- ///////footer -->
+<!-- ///////////// -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h3>About Us</h3>
+      <p>We are dedicated to providing the best shopping experience for our customers.</p>
+    </div>
+    <div class="footer-section contact" id="simu">
+      <h3>Contact Us</h3>
+      <p>Email: info@example.com</p>
+      <p>Phone: +123456789</p>
+    </div>
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section social">
+      <h3>Follow Us</h3>
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- //////////// -->
+<!-- ///////footer -->
+<script src="script.js"></script>
+</body>
+</html>
