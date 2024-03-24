@@ -47,7 +47,7 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
           
-        <button type="submit">Login</button>
+        <button action="lgninsdel.php" method="POST">Login</button>
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
@@ -73,7 +73,9 @@
             <!-- //// -->
           </ul>
           <p>Total: Ksh <span id="cart-total">0.00</span></p>
-        
+          <div class="Proced">
+            <button onclick="addCartToCheckout()">Proceed</button>
+          </div>
       </div>
     </div>
   </div>
@@ -257,5 +259,6 @@
 <!-- ///////footer -->
 <script src="script.js"></script>
 <script src="main.js"></script>
+<script src="checkout.js"></script>
 </body>
 </html>
