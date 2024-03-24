@@ -7,32 +7,61 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- /////navigation bar -->
+ <!-- /////navigation bar -->
 <nav>
-    <!-- nav logo -->
-    <div class="logo">
-      <a href="#"><img src="assets/logo.png.jpeg" alt="Logo"></a>
-    </div>
-    <!-- nav logo ends -->
-    <div class="navel">
-  <ul>
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="products.html">Collection</a></li>
-    <li><a href="#">about</a></li>
-    <li><a href="#">Contact us</a></li>
-  
-  <div class="search-container">
-    <input type="text" placeholder="Search...">
-    <button type="submit">Search</button>
+  <!-- nav logo -->
+  <div class="logo">
+    <a href="#"><img src="assets/logo.png.jpeg" alt="Logo"></a>
   </div>
-
-  </ul>
-  </div>
-
+  <!-- nav logo ends -->
+<ul>
+  <li><a href="index.html" class="active">Home</a></li>
+  <li><a href="products.html">Collection</a></li>
+  <li><a href="about.html">about</a></li>
+  <li><a href="#simu">Contact us</a></li>
+</ul>
+<!-- ///////side two -->
+<div class="search-container">
+  <input type="text" placeholder="Search...">
+  <button type="submit">Search</button>
+</div>
  
+
+<!-- login home -->
+<i class="fas fa-user-plus" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"></i>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="#" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="assets/login.jpeg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button action="lgninsdel.php" method="POST">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+   <!-- login home -->
 </nav>
 <!-- //////nav bar ends -->
-
 
 <div class="conr">
   <h2>Checkout</h2>
@@ -43,8 +72,9 @@
     <div class="progress-step">Confirmation</div>
   </div>
   
-  <div id="cart-sectn">
+  <div id="cart-items">
     <!-- Cart Items Displayed Dynamically -->
+      <button class="met" onclick="nextStep()">Next</button>
   </div>
   
   <div id="shipping-section">
@@ -73,8 +103,6 @@
     <button class="met" onclick="placeOrder()">Place Order</button>
   </div>
 </div>
-
-
 
 
 
@@ -114,5 +142,6 @@
   <!-- //////////// -->
   <!-- ///////footer -->
 <script src="checkout.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

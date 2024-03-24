@@ -774,29 +774,30 @@ span.psw {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
+  background-image: url(assets/download\ \(2\).jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(6px);
 }
-
-
-
+.conr h2{
+  color: white;
+  font-weight: bold;
+}
 #progress-bar {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-
 .progress-step {
   flex-grow: 1;
   text-align: center;
 }
-
 .progress-step.active {
   font-weight: bold;
 }
-
 #shipping-section, #payment-section, #confirmation-section {
   display: none;
 }
-
 .met {
   background-color: #4CAF50;
   color: white;
@@ -806,8 +807,8 @@ span.psw {
   cursor: pointer;
   margin-top: 10px;
 }
-
 .met:hover {
   background-color: #45a049;
 }
+
 /* /////checkout ends */
