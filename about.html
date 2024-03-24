@@ -107,10 +107,12 @@
 <div class="conta">
     <h2>Customer Reviews:</h2>
     <div id="reviews"></div>
+    <form action="reviews.php" method="POST">
     <div id="addReview">
-      <textarea id="reviewText" placeholder="Write your review here"></textarea>
+      <textarea name="ReviewText" id="reviewText" placeholder="Write your review here"></textarea>
       <button onclick="addReview()">Submit</button>
     </div>
+    </form>  
   </div>
 
 
